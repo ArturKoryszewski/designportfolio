@@ -1,0 +1,63 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+header p {
+  font-size: 14px;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item img {
+  width: 
+  height: auto;
+  display: block;
+}
+
+.caption {
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width:95%;
+    padding: 10px;
+  }
+
+.item {
+  width: 45%;
+}
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    flex-direction: column;
+  }
+.item {
+  width: 100%;
+}
+}
